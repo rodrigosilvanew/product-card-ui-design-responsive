@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --first-color: #E3F8FF;
+    --second-color: #DCFAFB;
+    --third-color: #FFE8DF;
+    --accent-color: #FF5151;
+    --dark-color: #161616;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(220px, 1fr));
+    max-width: 1200px;
+    margin: 2.5em;
+}
+
+.title-shop {
+    font-size: 3em;
+}
+
+.card {
+    background-color: var(--first-color);
+}
+
+.card .card-img {
+    width: 180px;
+}
+
+.card .card-img img {
+    width: 100%;
+}
