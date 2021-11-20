@@ -30,10 +30,17 @@ body {
     gap: 2rem;
 }
 
+.title-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .title-shop {
     position: relative;
     font-size: 3.2em;
     margin: 0 1.2em;
+    display: block;
 }
 .title-shop::after {
     content: '';
@@ -95,7 +102,7 @@ body {
 .card-name {
     position: absolute;
     top: 0;
-    left: -25%;
+    left: -30%;
     height: 100%;
     width: 3.5em;
     writing-mode: vertical-rl;
@@ -146,3 +153,17 @@ body {
     font-size: 1.8em;
     font-weight: bold;
 }
+
+/*******************
+    MEDIA QUERIES
+ *******************/
+
+ @media screen and (min-width: 1200px) {
+     .main {
+         margin: 3em auto;
+     }
+
+     .title-shop {
+         margin-left: 1em;
+     }
+ }
